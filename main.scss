@@ -1,0 +1,70 @@
+$tableBackgroundColor: #008057;
+$primaryColor: #008057;
+$secondaryColor: #005c3f;
+
+#name::first-letter{
+  font-weight: bold;
+  font-size: 50px;
+  color: $tableBackgroundColor;
+}
+
+.projecthead {
+  margin: auto;
+  text-align: center;
+}
+
+.tablecontent {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 20px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+table thead tr {
+  color: #fff;
+  background: $tableBackgroundColor;
+  text-align: center;
+  font-weight: bold;
+}
+table thead {
+  font-size: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 3px solid #ddd;
+  text-align: center;
+}
+.table tbody {
+  font-size: 17px;
+}
+
+.table tbody tr:nth-of-type(even) {
+  /* for even row numbers, change color to this*/
+  background: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  /* for last row, change to this border*/
+  border-bottom: 2px solid $tableBackgroundColor;
+}
+
+.tablecontent button {
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #008057;
+}
+
+.tablecontent button:hover {
+  background: $secondaryColor;
+  color: #fff;
+  transition: 0.5s;
+}
